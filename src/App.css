@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+
+.grid_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.grid_item {
+    border: 1px solid black;
+}
+
+
+/* removes indents on lists (ul) */
+.recipe_list, .podcast_list, .recipe_info, .podcast_info,
+.dashboard_podcast_info, .dashboard_recipe_info {
+    padding-left: 0%;
+}
+
+/* colors and height for main Title */
+.recipod {
+    font-size: 56px;
+    color: black
+}
+
+.pod {
+    color: red
+}
+
+  /* MEDIA SECTION------------------------------------------------- */
+  @media all and (min-width:800px) {
+
+}

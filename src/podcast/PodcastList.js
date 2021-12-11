@@ -7,14 +7,15 @@ function PodcastList() {
         <AppContext.Consumer>
             {(value) => {
                 if(!value.podcast.list[0]) {
-                    return 'No podcast selected. Search anything, and pick your favorite!'
+                    //returns null or message if there is no recipe array
+                    return 'Recipe selected. Next, search for a podcast!'
                 }
                 return (
-                    <article>
-                        <ul>
+                    <article className='podcast_article'>
+                        <ul className='podcast_list grid_list'>
                             {value.podcast.list.map((podcast, i) => {
                                 return (
-                                    <li key={i}>
+                                    <li key={i} className='grid_item'>
                                         <PodcastCard key={i} podcast={podcast} />
                                     </li>
                                 )

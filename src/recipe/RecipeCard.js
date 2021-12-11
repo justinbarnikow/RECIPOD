@@ -12,7 +12,7 @@ function RecipeCard(props) {
                 return (
                     <div className='recipe_card'>
                         {props.recipe.recipe.label}
-                        <ul className='recipe-info'>
+                        <ul className='recipe_info'>
                             <li>Total Time: {props.recipe.recipe.totalTime} min</li>
                             <li>Yields: {props.recipe.recipe.yield} servings</li>
                             <li>Calories: {calories} kcal</li>

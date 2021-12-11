@@ -7,14 +7,15 @@ function RecipeList() {
         <AppContext.Consumer>
             {(value) => {
                 if(!value.recipe.list[0]) {
-                    return 'No recipe selected yet. Search anything, and pick your favorite!'
+                    //returns null or message if there is no recipe array
+                    return null
                 }
                 return (
-                    <article>
-                        <ul>
+                    <article className='recipe_article'>
+                        <ul className='recipe_list grid_list'>
                             {value.recipe.list.map((recipe, i) => {
                                 return (
-                                    <li key={i}><RecipeCard recipe={recipe} key={i} /></li>
+                                    <li className='grid_item' key={i}><RecipeCard recipe={recipe} key={i} /></li>
                                 )
                             })}
                         </ul>

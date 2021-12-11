@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 import AppContext from '../AppContext'
 
 function PodcastSearchbar() {
+    const navigate = useNavigate()
     return (
         <AppContext.Consumer>
             {(value) => {
@@ -11,10 +13,15 @@ function PodcastSearchbar() {
                             <input 
                                 type='text' name='podcast' id='podcast' aria-label='podcast search term'
                                 placeholder='college football' required
-                            />
-                            <button type='submit' disabled={!value.recipe.recipeTime}>
-                                Search
-                            </button>
+                            /><br />
+                            <button disabled={!value.recipe.recipeTime} type='submit'>Go</button>
+                            <button onClick={() => {
+                                navigate('/help')
+                            }}>Help</button>
+                            <button type='button' onClick={() => {
+                                value.restartAll()
+                                navigate('/')
+                            }}>Restart</button>
                         </form>
                     </article>
                 )

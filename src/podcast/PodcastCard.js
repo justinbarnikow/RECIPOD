@@ -17,7 +17,7 @@ function PodcastCard(props) {
                 return (
                     <div className='podcast_card'>
                         <a href={props.podcast.listennotes_url} target="_blank" rel="noreferrer">{props.podcast.title_original}</a>
-                        <ul className='podcast-info'>
+                        <ul className='podcast_info'>
                         <li><a href={props.podcast.link} target="_blank" rel="noreferrer">
                             <img width="150" height="150" src={image} alt='food'/>
                         </a></li>

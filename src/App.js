@@ -6,6 +6,7 @@ import RecipePage from './recipe/RecipePage'
 import PodcastPage from './podcast/PodcastPage'
 import ResultsPage from './results/ResultsPage'
 import './App.css'
+import Help from './Help'
 
 export default class App extends Component {
 
@@ -144,11 +145,16 @@ export default class App extends Component {
     return (
       <AppContext.Provider value={contextValue}>
         <div className='App wrapper'>
-          <Link style={{ textDecoration: 'none' }} to='/'><span className='recipod'>Reci<span className='pod'>pod</span></span></Link>
+          <div className='link'>
+            <Link className='recipod' style={{ textDecoration: 'none' }} to='/'>
+              <span className='reci'>Reci</span><span className='pod'>pod</span>
+            </Link>
+          </div>
           <Routes>
             <Route path='/' element={<RecipePage />} />
             <Route path='/podcast' element={<PodcastPage />} />
             <Route path='/results' element={<ResultsPage />} />
+            <Route path='/help' element={<Help />} />
           </Routes>
         </div>
       </AppContext.Provider>

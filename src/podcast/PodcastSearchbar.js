@@ -12,16 +12,18 @@ function PodcastSearchbar() {
                         <form onSubmit={(e) => value.findPodcasts(e)}>
                             <input 
                                 type='text' name='podcast' id='podcast' aria-label='podcast search term'
-                                placeholder='college football' required
-                            /><br />
-                            <button disabled={!value.recipe.recipeTime} type='submit'>Go</button>
-                            <button onClick={() => {
-                                navigate('/help')
-                            }}>Help</button>
-                            <button type='button' onClick={() => {
-                                value.restartAll()
-                                navigate('/')
-                            }}>Restart</button>
+                                placeholder='search for podcast..' required
+                            />
+                            <div className='podcast_buttons'>
+                                <span className='button_space'><button disabled={!value.recipe.recipeTime} type='submit'>Search</button></span>
+                                <span className='button_space'><button type='button' onClick={() => {
+                                    value.restartAll()
+                                    navigate('/')
+                                }}>Reset</button></span>
+                                <span className='button_space'><button onClick={() => {
+                                    navigate('/help')
+                                }}>Help</button></span>
+                            </div>
                         </form>
                     </article>
                 )

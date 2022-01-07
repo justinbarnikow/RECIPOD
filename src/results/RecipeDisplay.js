@@ -27,7 +27,7 @@ function RecipeDisplay() {
                                 <li>Yields: {value.recipe.recipe.yield} servings</li>
                                 <li>
                                     Recipe Instructions:  <a href={value.recipe.recipe.url} target="_blank" rel="noreferrer">
-                                            <br/>{value.recipe.recipe.source}
+                                            <br/>click here
                                         </a>
                                 </li>
                             </ul>

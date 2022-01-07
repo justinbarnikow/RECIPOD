@@ -26,7 +26,7 @@ function RecipeCard(props) {
                             <li>Yields: {props.recipe.recipe.yield} servings</li>
                             <li>
                                 Recipe Instructions:  <a href={props.recipe.recipe.url} target="_blank" rel="noreferrer">
-                                        <br/>{props.recipe.recipe.source}
+                                        <br/>click here
                                     </a>
                             </li>
                         </ul>

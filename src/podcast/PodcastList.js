@@ -8,7 +8,7 @@ function PodcastList() {
             {(value) => {
                 if(!value.podcast.list[0]) {
                     //returns null or message if there is no recipe array
-                    return <div className='no_podcast_text'>Recipe selected. Next, search for a podcast!</div>
+                    return <div className='no_podcast_text'>Next, search for a podcast!</div>
                 }
                 return (
                     <article className='podcast_article'>

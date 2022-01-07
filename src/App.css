@@ -25,7 +25,7 @@
 
 .App {
     font-family: 'Poppins', sans-serif;
-    /*background-color:blanchedalmond;*/
+    background-color:rgb(255, 255, 255);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -34,6 +34,7 @@
     align-items: center;
     border: 1px solid #333;
     box-shadow: 0px 0px 15px gray;
+    -webkit-appearance: none 
   }
 
   form {
@@ -54,10 +55,11 @@
 
   .recipe_searchbar input, .podcast_searchbar input {
       border: none;
-      width: 600px;
+      width: 375px;
       border-radius: 10px;
       padding: 10px;
       box-shadow: 0px 0px 15px gray; 
+      -webkit-appearance: none 
   }
 
   ::placeholder {
@@ -98,16 +100,23 @@
 /* adds style to items in grid (cards) */
 .grid_item {
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(235, 234, 234);
     border-radius: 10px;
     text-align: center;
-    width: 500px;
+    width: 350px;
     box-shadow: 0px 0px 15px gray; 
-    padding: 20px
+    padding: 20px;
+    -webkit-appearance: none 
 }
 
 .grid_item:hover {
     box-shadow: 0px 0px 15px rgb(175, 0, 0); 
+    -webkit-appearance: none 
+}
+
+img {
+    width: 150px;
+    height: 150px
 }
 
 .button_space {
@@ -116,7 +125,7 @@
 
 .rounded_button {
     border-radius: 5px;
-    width: 75px;
+    width: 50px;
 }
 
 .card_title {
@@ -144,16 +153,16 @@ img {
 
 .recipe_info li, .dashboard_recipe_info li {
     padding-top: 5px;
-    padding-bottom: 12px;
+    padding-bottom: 5px;
 }
 
 .podcast_info li, .dashboard_podcast_info li {
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .recipe_card, .podcast_card, .dashboard_recipe, .dashboard_podcast {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .help_page {
@@ -187,6 +196,74 @@ button:hover {
     background-color: rgb(186, 0, 0);
     color: rgb(255, 255, 255);
     box-shadow: 0px 0px 15px gray; 
+    -webkit-appearance: none 
 }
 
   /* MEDIA SECTION------------------------------------------------- */
+  @media all and (min-width:414px) {
+
+
+}
+
+@media all and (min-width:600px) {
+    img {
+        width: 200px;
+        height: 200px
+    }
+
+    .grid_item {
+        width: 400px;
+    }
+
+    .recipe_card, .podcast_card, .dashboard_recipe, .dashboard_podcast {
+        font-size: 14px;
+    }
+
+    .recipe_searchbar input, .podcast_searchbar input {
+        width: 500px;
+    }
+
+    .recipe_info li, .dashboard_recipe_info li {
+        padding-top: 10px;
+        padding-bottom: 16px;
+    }
+
+    .podcast_info li, .dashboard_podcast_info li {
+        padding-top: 12px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media all and (min-width:800px) {
+    img {
+        width: 200px;
+        height: 200px
+    }
+
+    .grid_item {
+        width: 450px;
+    }
+
+    .recipe_card, .podcast_card, .dashboard_recipe, .dashboard_podcast {
+        font-size: 18px;
+    }
+
+    .recipe_searchbar input, .podcast_searchbar input {
+        width: 600px;
+    }
+
+    .rounded_button {
+        width: 75px;
+    }
+
+    .recipe_info li, .dashboard_recipe_info li {
+        padding-top: 5px;
+        padding-bottom: 12px;
+    }
+    
+    .podcast_info li, .dashboard_podcast_info li {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}

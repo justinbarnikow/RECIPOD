@@ -29,6 +29,9 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    document.title = 'Recipod'
+  }
   
   findRecipes = (e) => {
     e.preventDefault();

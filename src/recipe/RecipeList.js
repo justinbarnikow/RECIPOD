@@ -15,8 +15,9 @@ function RecipeList() {
                         <ul className='recipe_list grid_list'>
                             {value.recipe.list.map((recipe, i) => {
                                 return (
-                                    <li className='
-                                    grid_item' key={i}><RecipeCard recipe={recipe} key={i} /></li>
+                                    <li className='grid_item' key={i}>
+                                        <RecipeCard recipe={recipe} key={i} />
+                                    </li>
                                 )
                             })}
                         </ul>

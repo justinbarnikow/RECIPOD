@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Recipod
+https://recipod.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Recipod is a react-app that provides a recipe and a podcast of similar lengths. By searching for and selecting a recipe of your choice, Recipod then curates a list of podcasts based off of keywords you use, and the length of time it takes to complete your recipe from start to finish. If making your Penne alla Vodka recipe takes 37 minutes, you can be assured that Recipod will filter through podcast options so that they match the estimated time of completion of your dish. Both your recipe and podcast will be displayed together on a 'Results' page so they are conveniently at your disposal to refer back to.
 
-## Available Scripts
+## Motivation
+Many people often look for podcasts to keep themseleves entertained while doing activities such as cooking. The motivation behind Recipod was to be able to pair a recipe and podcast together whtout having to worrry about their mismatched lengths. Instead of having to suddenly cook in silence because your podcast ended, interrupt what you're doing to fiund a new one, or not be able to finish it, Recipod provides a solution by curating a list of podcasts that fit wonderfully with the recipe you've chosen..
 
-In the project directory, you can run:
+## Built With
+* Javascript
+* HTML
+* CSS
+* Edamame API
+* Listennotes API
+* Git/GitHub
 
-### `npm start`
+## Features
+* search for a recipe based on keywords or phrases
+* search for a podcast based on recipe length of time, plus keywords or phrases
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Screenshots
+### Recipe Page
+![Screenshot1](https://user-images.githubusercontent.com/76211223/154862527-4fad4ad8-eefa-45bb-a7ef-ddc59bf18236.PNG)
+### Recipe Results
+![Screenshot2](https://user-images.githubusercontent.com/76211223/154862529-f50b067f-6fa2-48a4-895d-1de370be7f8c.PNG)
+### Podcast Page
+![Screenshot3](https://user-images.githubusercontent.com/76211223/154862531-68488db1-3ccf-478e-a201-abe6d6b67573.PNG)
+### Podcast Results
+![Screenshot4](https://user-images.githubusercontent.com/76211223/154862533-47e22ca6-a577-4f52-a06b-94fcd3c3069a.PNG)
+### End Results Page
+![Screenshot5](https://user-images.githubusercontent.com/76211223/154862534-ad4a1eb5-c9a2-429c-8fbf-2b620641d25e.PNG)
+### Help Page
+![Screenshot6](https://user-images.githubusercontent.com/76211223/154862535-41ffec0d-972d-4986-8fca-671110b28588.PNG)

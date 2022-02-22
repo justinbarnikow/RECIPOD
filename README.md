@@ -5,7 +5,7 @@ https://recipod.vercel.app/
 Recipod is a react-app that provides a recipe and a podcast of similar lengths. By searching for and selecting a recipe of your choice, Recipod then curates a list of podcasts based off of keywords you use, and the length of time it takes to complete your recipe from start to finish. If making your Penne alla Vodka recipe takes 37 minutes, you can be assured that Recipod will filter through podcast options so that they match the estimated time of completion of your dish. Both your recipe and podcast will be displayed together on a 'Results' page so they are conveniently at your disposal to refer back to.
 
 ## Motivation
-Many people often look for podcasts to keep themseleves entertained while doing activities such as cooking. The motivation behind Recipod was to be able to pair a recipe and podcast together whtout having to worrry about their mismatched lengths. Instead of having to suddenly cook in silence because your podcast ended, interrupt what you're doing to fiund a new one, or not be able to finish it, Recipod provides a solution by curating a list of podcasts that fit wonderfully with the recipe you've chosen..
+Many people often look for podcasts to keep themselves entertained while doing activities such as cooking. The motivation behind Recipod was to be able to pair a recipe and podcast together without having to worry about their mismatched lengths. Instead of having to suddenly cook in silence because your podcast ended, interrupt what you're doing to find a new one, or not be able to finish it, Recipod provides a solution by curating a list of podcasts that fit wonderfully with the recipe you've chosen..
 
 ## Built With
 * Javascript
